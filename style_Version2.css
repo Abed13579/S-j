@@ -1,0 +1,7 @@
+body { font-family: Tahoma, Arial; direction: rtl; background: #f2f2f2; }
+.container { max-width: 500px; margin: 40px auto; background: #fff; border-radius: 8px; padding: 24px; box-shadow: 0 0 12px #ddd; }
+input[type="text"] { width: 95%; padding: 8px; margin: 10px 0; font-size: 18px; }
+button { padding: 10px 30px; font-size: 18px; background: #009688; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #00796b; }
+.question { font-size: 20px; margin-bottom: 16px; }
+.scores { margin: 18px 0; font-size: 18px; }

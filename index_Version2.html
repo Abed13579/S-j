@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحدي الفرق المجاني</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>تحدي الفرق</h1>
+    <form id="teamsForm">
+      <input type="text" id="teamA" placeholder="اسم الفريق الأول" required>
+      <input type="text" id="teamB" placeholder="اسم الفريق الثاني" required>
+      <button type="submit">بدء التحدي</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('teamsForm').onsubmit = function(e) {
+      e.preventDefault();
+      localStorage.setItem('teamA', document.getElementById('teamA').value);
+      localStorage.setItem('teamB', document.getElementById('teamB').value);
+      window.location.href = 'game.html';
+    }
+  </script>
+</body>
+</html>
